@@ -4,12 +4,14 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import Modal from './modal/modal';
+import Status from './modal/status';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <App/>
     <Modal/>
+    <Status/>
   </React.StrictMode>
 );
 

@@ -93,3 +93,24 @@ body{
     height: 60px;
     font-size: 25px;
 }
+
+body{
+    margin: 0px;
+    padding: 0px;
+}
+.header{
+    width: 60%;
+    height: 60px;
+    background-color: rgb(71,74,110);
+    color: wheat;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+.status{
+    width: 70%;
+    height: 150px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}

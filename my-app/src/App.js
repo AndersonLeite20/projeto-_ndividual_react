@@ -43,7 +43,7 @@ function App(){
                 <img id="img" src={Img3} alt="p"/>
             </div>
             <div className="div-nome">
-                <p>Brumo Jorge</p>
+                <p>Bruno Jorge</p>
             </div>
         </div>
         <div className="div-bot">
