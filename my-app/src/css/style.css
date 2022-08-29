@@ -42,7 +42,7 @@ body{
     margin: 0px;
     padding: 0px;
 }
-.modal-conteiner{
+#modal-conteiner{
     width: 70%;
     height: 250px;
     margin: auto;

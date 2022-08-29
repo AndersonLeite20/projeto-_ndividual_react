@@ -1,10 +1,15 @@
 import React from "react";
 import "../css/style.css"
 
-function modal(){
+
+
+// Mostar o modal de pagamento ao clikar no botão emviar. 
+const modal = props => {
+    const {className, modal_conteiner0} = props
+
     return(
         <>
-        <div className="modal-conteiner">
+        <div id="modal-conteiner" ref={modal_conteiner0} className={`${className}`} >
             <div className="div-nome-usuario">
                 <h3>Pagamento para NOME DO USUARIO</h3>
             </div>
@@ -20,5 +25,6 @@ function modal(){
         </div>
         </>
     )
-}
+}    
+
 export default modal

@@ -4,8 +4,9 @@ import Img2 from "./img/pes02.jpg"
 import Img3 from "./img/pes03.jpg"
 import "./css/style.css"
 //import {View, Button, text} from 'react-native'
+import abrirModal from "./comandos/comando"
 
-
+// Mostrar o modal inicial
 function App(){
   return (
     <>
@@ -19,7 +20,7 @@ function App(){
             </div>
         </div>
         <div className="div-bot">
-            <button>Pager</button>
+            <button onClick={() => abrirModal()}></button>
         </div>
     </div>
 
