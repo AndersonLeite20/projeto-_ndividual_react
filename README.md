@@ -1,1 +1,1 @@
-# projeto-_ndividual_react
+# projeto_individual_react
