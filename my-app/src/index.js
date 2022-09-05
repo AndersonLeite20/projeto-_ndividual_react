@@ -1,15 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
+import Usuario01 from "./usuario/Primeirousu.jsx"
+import Usuario02 from "./usuario/Segundousu.jsx"
+import Usuario03 from "./usuario/Terceirousu.jsx"
 
 // Reinderizar os componentes na tela
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App/>
-
+   <Usuario01/>
+   <Usuario02/>
+   <Usuario03/>
   </React.StrictMode>
 );
 
