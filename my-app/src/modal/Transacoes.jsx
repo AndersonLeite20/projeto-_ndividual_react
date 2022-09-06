@@ -1,7 +1,9 @@
 import React from "react";
+import "../css/style.css"
 
 // Mostar o modal de pagamento ao clikar no botão emviar.
-const Emviar = (e) => {
+export default function emviar(){
+
    return(
       <div id="modal-conteiner">
             <div className="div-nome-usuario">
@@ -17,7 +19,7 @@ const Emviar = (e) => {
                <button>PAGAR</button>
             </div>
       </div>
-  )
+   )
 }
-export default Emviar
+
 

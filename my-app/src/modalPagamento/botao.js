@@ -1,12 +1,12 @@
 import React from "react"
 import "../css/style.css"
-import Emviar from "../modal/Transacoes"
+import  Emviar  from  "../modal/Transacoes"
 
-function Botao(e){
+function Botao(){
    return(
       <>
-         <button onClick={(e)=><Emviar/>}>Pager</button>
+         <button onClick={()=>this.Emviar}>Pager</button>
       </>
-   )
+   ) 
 } 
 export default Botao   
