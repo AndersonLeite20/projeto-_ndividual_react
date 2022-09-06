@@ -1,6 +1,7 @@
 import React from "react";
 import Img3 from "../img/pes03.jpg"
 import "../css/style.css"
+import Botao from "../modalPagamento/botao";
 
 function terceirousu(){
    return(
@@ -15,7 +16,7 @@ function terceirousu(){
          </div>
       </div>
       <div className="div-bot">
-         <button >Pager</button>
+         <Botao/>
       </div>
    </div>
    </>

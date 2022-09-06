@@ -1,6 +1,7 @@
 import React from "react";
 import Img2 from "../img/pes02.jpg"
 import "../css/style.css"
+import Botao from "../modalPagamento/botao";
 
 function segundousu(){
    return(
@@ -15,7 +16,7 @@ function segundousu(){
             </div>
          </div>
          <div className="div-bot">
-            <button>Pager</button>
+            <Botao/>
          </div>
       </div>
       </>
