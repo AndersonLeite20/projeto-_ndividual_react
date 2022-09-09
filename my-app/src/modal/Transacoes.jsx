@@ -2,12 +2,12 @@ import React from "react";
 import "../css/style.css"
 
 // Mostar o modal de pagamento ao clikar no botão emviar.
-export default function emviar(){
-
+export default function emviar(props){
+   const pr1 = props.nome1
    return(
       <div id="modal-conteiner">
             <div className="div-nome-usuario">
-               <h3>Pagamento para NOME DO USUARIO</h3>
+               <h3>Pagamento para {pr1}</h3>
             </div>
             <div className="div-valor">
                <input id="input-valor" type="text" placeholder="R$ 0,00"/>

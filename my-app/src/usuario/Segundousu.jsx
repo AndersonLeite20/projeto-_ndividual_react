@@ -4,6 +4,8 @@ import "../css/style.css"
 import Botao from "../modalPagamento/botao";
 
 function segundousu(){
+const nome2 = 'Maria Paula'
+
    return(
       <>
       <div className="container">
@@ -12,7 +14,7 @@ function segundousu(){
                <img id="img" src={Img2} alt="p"/>
             </div>
             <div className="div-nome">
-               <p>Maria Paula</p>
+               <p>{nome2}</p>
             </div>
          </div>
          <div className="div-bot">

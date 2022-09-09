@@ -4,6 +4,7 @@ import "../css/style.css"
 import Botao from "../modalPagamento/botao";
 
 function terceirousu(){
+   const nome3 = 'Brono Jorge'
    return(
    <>
    <div className="container">
@@ -12,7 +13,7 @@ function terceirousu(){
             <img id="img" src={Img3} alt="p"/>
          </div>
          <div className="div-nome">
-            <p>Bruno Jorge</p>
+            <p>{nome3}</p>
          </div>
       </div>
       <div className="div-bot">
