@@ -1,6 +1,6 @@
 import React from "react";
-import Modal from "react-modal"
 import {useState} from "react";
+import Modal from "react-modal"
 import './css/pagina.css'
 import Img1 from './img/pes01.jpg'
 import Img2 from './img/pes02.jpg'
@@ -19,10 +19,36 @@ export default function Painel(){
 
    function HandleOpenModal(){
       setIsOpen(true)
+      cartão()
    }
    function HandleCloseModal(){
       setIsOpen(false)
+      cartão()
    }
+
+   const props = (props) => {
+      var nome = document.getElementsByClassName.onClick('div-nome')
+      console.log(nome)
+   }
+
+   function cartão(){
+      let cards = [
+         // valid card
+         {
+           card_number: '1111111111111111',
+           cvv: 789,
+           expiry_date: '01/18',
+         },
+         // invalid card
+         {
+           card_number: '4111111111111234',
+           cvv: 123,
+           expiry_date: '01/20',
+         },
+      ];
+   }
+    
+
 
    return(
       <>
@@ -73,40 +99,27 @@ export default function Painel(){
                <button>Pagar</button>
             </div>
          </div>
-
-            <Modal
-               isOpen={modalIsOpen}
-               onRequestClose={HandleCloseModal}
-            >
-               <form id="modal-conteiner">
-                     <div className="div-nome-usuario">
-                        <h3>Pagamento para</h3>
-                     </div>
-                     <div className="div-valor">
-                        <input id="input-valor" type="text" placeholder="R$ 0,00"/>
-                     </div>
-                     <div className="div-select">
-                        <select name="CARTAO" id="select" placeholder="cartão com final"><option >CARTÃO COM O FINAL 0123</option></select>
-                     </div>
-                     <div className="div-button-pagar">
-                        <button onClick={HandleCloseModal}>PAGAR</button>
-                     </div>
-               </form>
-            </Modal>
+         <Modal
+         isOpen={modalIsOpen}
+         onRequestClose={HandleCloseModal}
+      >
+            <form id="modal-conteiner">
+                  <div className="div-nome-usuario">
+                     <h3>Pagamento para {props.nome}</h3>
+                  </div>
+                  <div className="div-valor">
+                     <input id="input-valor" type="text" required placeholder="R$ 0,00"/>
+                  </div>
+                  <div className="div-select">
+                     <select name="CARTAO" id="select"              placeholder="cartão com final">
+                        <option>23</option>
+                     </select>
+                  </div>
+                  <div className="div-button-pagar">
+                     <button onClick={HandleCloseModal}>PAGAR</button>
+                  </div>
+            </form>
+         </Modal>
       </>
    )
 }
-
-   
-   
-   
-
-         
-
-         
-
-         
-      
-   
-   
-
