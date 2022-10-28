@@ -1,10 +1,12 @@
-import Painel from './components/PaginaInicial'
+import React from 'react';
+import Usuario from './components/usuario/Usuario';
+//import Pagamento from './components/arte/Pagamento';
+//import Recibo from './components/arte/Recibo';
 
-function App() {
-  return (
-    <>
-      <Painel/>
-    </>
-  );
+export default function App() {
+   return (
+      <>
+         <Usuario/>
+      </>
+   );
 }
-export default App;
