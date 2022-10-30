@@ -8,13 +8,14 @@ export default function Usuario(){
 const dados = [
    {foto:Img1, nome:'Maria Regina', id: '001'},
    {foto:Img2, nome:'Elisa Santos', id: '002'},
-   {foto:Img3, nome: 'Samuel Silva', id: '009'}
+   {foto:Img3, nome: 'Samuel Silva', id: '003'}
 ];
+
    return(
       <>
-         <Painel/>
-         <Painel/>
-         <Painel/>
+         <Painel foto={dados[0].foto} nome={dados[0].nome} id={dados[0].id}/>
+         <Painel foto={dados[1].foto} nome={dados[1].nome} id={dados[1].id}/>
+         <Painel foto={dados[2].foto} nome={dados[2].nome} id={dados[2].id}/>
       </>
    )
 }
