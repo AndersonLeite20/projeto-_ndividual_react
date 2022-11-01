@@ -1,8 +1,7 @@
 import React from "react";
 import '../css/pagina.css'
 
-export default function Pagamento(){
-  
+export default function Pagamento(props){
    return(
       <>
          <div className="conteiner-Pagamento">

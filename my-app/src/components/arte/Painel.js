@@ -2,13 +2,9 @@ import React from "react";
 import '../css/pagina.css'
 
 export default function Panel(props){
-
-
-
-   
    return(
       <>
-         <div className="conteiner">
+         <div className="conteiner" onClick={()=>this.props.clikar}>
             <div className="foto">
                <img src={props.foto} alt=''/>
             </div>
@@ -21,7 +17,7 @@ export default function Panel(props){
                </div>
             </div>
             <div className="botao">
-               <button onClick=''>Pagar</button>
+               <button>Pagar</button>
             </div>
          </div>
       </>
